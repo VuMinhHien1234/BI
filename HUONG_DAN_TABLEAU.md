@@ -67,7 +67,7 @@ Menu **Analysis → Create Calculated Field…** (hoặc bấm ▾ cạnh ô tì
 4. Kéo `Mùa` lần nữa → thả vào ô **Color** trên Marks card.
 5. Lọc bỏ Null: kéo `Mùa` → khung **Filters** → tick 2 mùa, bỏ Null → OK.
 
-## Hình 3 — Nhiệt độ vs doanh thu Kem Miền Bắc (cột + đường, 2 trục)
+## Hình 3 — Nhiệt độ vs doanh thu Nước giải khát Miền Bắc (cột + đường, 2 trục)
 
 *Data source: Sales+Weather (view v_sales_weather)*
 
@@ -76,7 +76,7 @@ Menu **Analysis → Create Calculated Field…** (hoặc bấm ▾ cạnh ô tì
 3. Kéo `Revenue` → **Rows**. Kéo tiếp `Temp Mean` → **Rows**, thả bên phải (thành 2 biểu đồ chồng dọc) → right-click pill `Temp Mean` → **Measure → Average**.
 4. Right-click pill `AVG(Temp Mean)` → **Dual Axis** (2 biểu đồ nhập làm 1, 2 trục 2 bên).
 5. Marks card giờ có 3 thẻ: chọn thẻ **SUM(Revenue)** → đổi thành **Bar**; thẻ **AVG(Temp Mean)** → **Line**.
-6. Kéo `Category Name` → **Filters** → tick `Kem`. Kéo `Region Name` → **Filters** → tick `Miền Bắc`.
+6. Kéo `Category Name` → **Filters** → tick `Nước giải khát`. Kéo `Region Name` → **Filters** → tick `Miền Bắc`.
 
 ## Hình 4 — Doanh thu / 1 đồng quảng cáo theo chiến dịch (thanh ngang, trộn 2 nguồn)
 

@@ -20,7 +20,7 @@ Open-Meteo API → weather_daily.csv          ┘        │            ├─ s
 
 - Quy mô: 3.746 đơn hàng (3.732 dòng sạch sau ETL), 1.831 ngày-chiến dịch quảng cáo, 5.478 ngày-vùng thời tiết; 5 năm 2021–2025.
 - Doanh thu theo năm: 3,42 → 3,87 → 4,12 → 3,83 → 4,14 triệu (CAGR +4,9%/năm).
-- Phát hiện nổi bật: biên lợi nhuận gãy từ 23–25% xuống ~18% từ 2024 (thủ phạm chính: chi phí nguyên liệu tăng từ 42,3% lên 45,2% doanh thu); chiến dịch Tết hiệu quả quảng cáo thấp nhất (12 đồng doanh thu/1 đồng ads, so với 21–22 của Spring/Back-to-School); ngành Kem tại Miền Bắc bán mùa hè gấp ~2,2 lần mùa đông, tương quan thuận với nhiệt độ thực tế; phân khúc Nhà phân phối biên lãi chỉ 11% so với 29% của Kênh hiện đại.
+- Phát hiện nổi bật: biên lợi nhuận gãy từ 23–25% xuống ~18% từ 2024 (thủ phạm chính: chi phí nguyên liệu tăng từ 42,3% lên 45,2% doanh thu); chiến dịch Tết hiệu quả quảng cáo thấp nhất (12 đồng doanh thu/1 đồng ads, so với 21–22 của Spring/Back-to-School); ngành Nước giải khát tại Miền Bắc bán mùa hè gấp ~2,2 lần mùa đông, tương quan thuận với nhiệt độ thực tế; phân khúc Nhà phân phối biên lãi chỉ 11% so với 29% của Kênh hiện đại.
 - Toàn bộ phân tích chi tiết nằm trong báo cáo Word (9 chương, trong đó Chương 8 là 7 báo cáo chuyên đề: chuyển đổi, digital marketing, bán hàng, chi phí, phân khúc, vận hành, dự báo theo thời tiết) và 5 dashboard được đề xuất kèm hướng dẫn dựng từng bước.
 
 ## Yêu cầu

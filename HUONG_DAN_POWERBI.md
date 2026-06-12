@@ -102,7 +102,7 @@ Xong bước 0. Mỗi biểu đồ dưới đây: bấm vùng trống trên canv
 3. Kéo `fact_marketing_sales[revenue]` (cột gốc, không phải measure) → **Y-axis**, rồi bấm **mũi tên ▾ trên field đó → Average**.
 4. Loại nhóm "Khác": kéo `dim_date[Mùa]` vào **Filters on this visual** → tick chỉ "Hè (T5-8)" và "Đông (T11-2)".
 
-## Hình 3 — Nhiệt độ vs doanh thu Kem Miền Bắc (cột + đường, 2 trục)
+## Hình 3 — Nhiệt độ vs doanh thu Nước giải khát Miền Bắc (cột + đường, 2 trục)
 
 Dùng bảng `v_sales_weather` (đã join sẵn — không đụng các bảng khác):
 
@@ -110,7 +110,7 @@ Dùng bảng `v_sales_weather` (đã join sẵn — không đụng các bảng k
 2. Kéo `v_sales_weather[full_date]` → **X-axis**; nó tự thành hierarchy — bấm **▾ trên field → chọn Date** rồi ở Format → X-axis đổi Type: **Categorical**? Cách dễ hơn: right-click bảng `v_sales_weather` → New column: `YearMonth = FORMAT(v_sales_weather[full_date], "YYYY-MM")` rồi kéo `YearMonth` vào X-axis.
 3. Kéo `v_sales_weather[revenue]` → **Column y-axis**.
 4. Kéo `v_sales_weather[temp_mean]` → **Line y-axis**, bấm **▾ → Average**.
-5. Khung **Filters on this visual**: kéo `category_name` vào → tick **Kem**; kéo `region_name` vào → tick **Miền Bắc**.
+5. Khung **Filters on this visual**: kéo `category_name` vào → tick **Nước giải khát**; kéo `region_name` vào → tick **Miền Bắc**.
 
 ## Hình 4 — Doanh thu / 1 đồng quảng cáo theo chiến dịch (thanh ngang)
 

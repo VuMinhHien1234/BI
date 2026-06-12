@@ -4,11 +4,13 @@
 #
 # Logic: với mỗi đơn hàng (có ngày + vùng + ngành hàng hợp lệ), tra nhiệt độ trung bình
 # của vùng đó đúng ngày đó, rồi co giãn sản lượng/doanh thu theo độ nhạy của ngành hàng:
-#   Kem       +6.0%/°C so với mốc 26°C  (nhạy mạnh)
-#   Sữa chua  +2.5%/°C                  (nhạy vừa)
-#   Sữa tươi  +1.2%/°C                  (nhạy nhẹ)
-#   Sữa bột    0%                       (không nhạy - sữa công thức cho bé)
+#   Nước giải khát  +6.0%/°C so với mốc 26°C  (nhạy mạnh - trời nóng uống nhiều)
+#   Gia vị          +2.5%/°C                  (nhạy vừa)
+#   Bia             +1.2%/°C                  (nhạy nhẹ)
+#   Mì ăn liền       0%                       (hàng thiết yếu, không nhạy nhiệt)
 # Sau đó tính lại toàn bộ cột dẫn xuất theo đúng công thức gốc của dữ liệu.
+# (Ghi chú: script đã chạy khi danh mục còn tên cũ Kem/Sữa chua/Sữa tươi/Sữa bột —
+#  cùng thứ tự độ nhạy; danh mục được relabel sang portfolio Masan sau đó.)
 
 import os
 import re
@@ -24,10 +26,10 @@ MARKER = EXCEL + ".weather_adjusted"
 
 BASE_TEMP = 26.0
 SENSITIVITY = {  # %/°C theo ngành hàng
-    "Kem": 0.060,
-    "Sữa chua": 0.025,
-    "Sữa tươi": 0.012,
-    "Sữa bột": 0.0,
+    "Nước giải khát": 0.060,
+    "Gia vị": 0.025,
+    "Bia": 0.012,
+    "Mì ăn liền": 0.0,
 }
 np.random.seed(26)
 
