@@ -36,8 +36,10 @@ echo "      Done."
 # 4. Run ETL
 echo ""
 echo "[4/4] Running ETL (Excel + Ads CSV + Weather API -> staging -> DW)..."
-# Tải thời tiết (nguồn 3) nếu chưa có
-[ -f weather_daily.csv ] || python3 fetch_weather.py
+# Nguồn 3: gọi Open-Meteo API cập nhật thời tiết mỗi lần chạy.
+# Nếu offline/API lỗi thì dùng lại weather_daily.csv sẵn có (fallback).
+echo "      Cập nhật thời tiết từ Open-Meteo API..."
+python3 fetch_weather.py || echo "      (!) Không gọi được API — dùng weather_daily.csv sẵn có (nếu tồn tại)."
 python3 py-marketing.py
 
 echo ""
